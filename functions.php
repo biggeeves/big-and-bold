@@ -117,10 +117,34 @@ function big_and_bold_widgets_init() {
 
 add_action('widgets_init', 'big_and_bold_widgets_init');
 
+
+/**
+ * Add preconnect for Google Fonts.
+ *
+ * @since Twenty Seventeen 1.0
+ *
+ * @param array  $urls           URLs to print for resource hints.
+ * @param string $relation_type  The relation type the URLs are printed.
+ * @return array $urls           URLs to print for resource hints.
+ */
+function big_and_bold_resource_hints( $urls, $relation_type ) {
+	if ( wp_style_is( 'bold_easy_to_read-fonts', 'queue' ) && 'preconnect' === $relation_type ) {
+		$urls[] = array(
+			'href' => 'https://fonts.gstatic.com',
+			'crossorigin',
+		);
+	}
+
+	return $urls;
+}
+add_filter( 'wp_resource_hints', 'big_and_bold_resource_hints', 10, 2 );
+
 /**
  * Enqueue scripts and styles.
  */
 function big_and_bold_scripts() {
+    wp_enqueue_style('big-and-bold-fonts', 'https://fonts.googleapis.com/css?family=Montserrat:400,700');
+    
     wp_enqueue_style('big-and-bold-style', get_stylesheet_uri());
 
     wp_enqueue_style('font-awesome', 'https://use.fontawesome.com/releases/v5.0.1/css/all.css');

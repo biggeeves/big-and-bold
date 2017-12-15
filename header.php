@@ -23,7 +23,7 @@
         <div id="page" class="site">
             <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'big-and-bold'); ?></a>
             <div class="idm-header-contact">
-                <section class="info-block"><i class="fas fa-phone"></i> 1 (877) 254-7903 </section><section class="info-block"><i class="fas fa-globe"></i> Abbotsford, BC. Canada</section class="info-block">
+                <section class="info-block"><i class="fas fa-phone link-color"></i> 1 (877) 254-7903 </section><section class="info-block"><i class="fas fa-globe link-color"></i> Abbotsford, BC. Canada</section class="info-block">
             </div>
             <header id="masthead" class="site-header">
                 <div class="site-branding">

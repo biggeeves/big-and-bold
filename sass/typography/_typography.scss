@@ -10,6 +10,12 @@ textarea {
 	line-height: $font__line-height-body;
 }
 
+i.link-color {
+    color: $color__link;
+    font-size: 1.15rem;
+    margin-right: .3em;
+}
+
 @import "headings";
 
 @import "copy";
