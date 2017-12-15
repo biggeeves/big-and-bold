@@ -1,0 +1,78 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+    box-sizing: inherit;
+}
+
+body {
+    background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+}
+h1{
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+h2{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+h3{
+    font-size: 26px;
+    font-weight: 700;
+}
+h4{
+    font-size: 26px;
+    font-weight: 700;
+}
+h5{
+    font-size: 20px;
+    font-weight: 700;
+}
+h6{
+    font-size: 14px;
+}
+
+/*h1:after, h2:after, h3:after, h4:after, h5:after, h6:after {
+    content: '';
+    display: block;
+    width: 135px;
+    height: 6px;
+    margin: 0.4em auto 0;
+    background-color: $color__link *.9;
+}*/
+
+hr {
+    background-color: $color__background-hr;
+    border: 0;
+    height: 1px;
+    margin-bottom: 1.5em;
+}
+
+@import "lists";
+
+img {
+    height: auto; /* Make sure images are scaled correctly. */
+    max-width: 100%; /* Adhere to container width. */
+}
+
+figure {
+    margin: 1em 0; /* Extra wide images within figure tags don't overflow the content area. */
+}
+
+@import "tables";
+
+.site-header {
+    background-color: #fd3c3d;
+}
+
+.site-branding {
+    display: inline-block;
+    width: 22%;
+}

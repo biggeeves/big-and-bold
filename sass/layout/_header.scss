@@ -1,0 +1,29 @@
+.idm-header-contact {
+
+    color:$color__text-main;
+    margin: 10px 0px 10px 60px;
+}
+
+.info-block { 
+    margin-left: 30px;
+    font-size: 15px;
+    line-height: 15px;
+    display: inline-block;
+}
+
+.site-branding {
+    margin-left: 80px;
+}
+
+.site-title, h1.site-title a {
+    color: $color__text-main;
+    font-size: 13px;
+}
+
+h1.site-title a {
+    color: $color__text-main;
+    font-size: 13px;
+    &:hover {
+        color: $color__background-body;
+    }
+}
