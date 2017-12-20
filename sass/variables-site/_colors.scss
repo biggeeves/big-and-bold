@@ -1,35 +1,20 @@
-$dark_grey: #181a1f;
-$grey: #31343b;
-$very_light_grey: #f1f1f1;
-$red: #fd3c3d;
-$light_red: #fe5c7a;
-$green: #398f14;
-$blue: #21759b;
-$white: #fff;
-
-$color__background-body: $dark_grey;
-$color__background-screen: $very_light_grey;
-$color__background-hr: $grey;
+$color__background-body: #181a1f;
+$color__background-screen: #f1f1f1;
+$color__background-hr: #ccc;
 $color__background-button: #e6e6e6;
 $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 
-$color__text-screen: $blue;
-$color__text-input: #818181;
+$color__text-screen: #21759b;
+$color__text-input: #666;
 $color__text-input-focus: #111;
+$color__link: #fd3c3d;
+$color__link-visited: #fd3c3d;
+$color__link-hover: #fff;
+$color__text-main: #fff;
 
-$color__link: $red;
-$color__link-visited: $red;
-$color__link-hover: $white;
-$color__text-main: $white;
-
-$color__border-button: $red;
+$color__border-button: #ccc #ccc #bbb;
 $color__border-button-hover: #ccc #bbb #aaa;
 $color__border-button-focus: #aaa #bbb #bbb;
-$color__border-table: $color__background-hr;
-$color__border-input: $white;
-$color__border-pre: darken( $color__background-pre, 10% );
+$color__border-input: #ccc;
 $color__border-abbr: #666;
-
-$color__not-valid: $light_red;
-$color__valid: $green;

@@ -68,5 +68,11 @@ figure {
 
 @import "tables";
 
+.site-header {
+    background-color: #fd3c3d;
+}
 
-@import "flex";
+.site-branding {
+    display: inline-block;
+    width: 22%;
+}

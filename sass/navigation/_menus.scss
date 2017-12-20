@@ -2,9 +2,8 @@
     clear: both;
     width: 100%;
     background-color: #fd3c3d;
+    width: 70%;
     display: inline-block;
-    max-width: 1350px;
-
 
     ul {
         display: none;
@@ -126,14 +125,6 @@
 .menu-toggle,
 .main-navigation.toggled ul {
     display: block;
-    font-weight: 700;
-    font-family: $font__sans;
-    font-size: 1.25rem;
-    padding: 15px 23px;
-    border: none;
-    background-color: $color__link;
-    color: $color__text-main; 
-    text-transform: uppercase;
 }
 
 @media screen and (min-width: 37.5em) {
@@ -143,11 +134,6 @@
     .main-navigation ul {
         display: block;
     }
-}
-
-.menu-toggle__icon {
-    vertical-align: top;
-    margin-right: 15px;
 }
 
 .comment-navigation,
