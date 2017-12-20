@@ -23,14 +23,21 @@
         <div id="page" class="site">
             <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'big-and-bold'); ?></a>
             <div class="idm-header-contact">
-                <section class="info-block"><i class="fas fa-phone link-color"></i> 1 (877) 254-7903 </section><section class="info-block"><i class="fas fa-globe link-color"></i> Abbotsford, BC. Canada</section class="info-block">
+                <section class="info-block phone"><i class="fas fa-phone link-color"></i> 1 (877) 254-7903 </section><section class="info-block location"><i class="fas fa-globe link-color"></i> Abbotsford, BC. Canada</section>
             </div>
             <header id="masthead" class="site-header">
                 <div class="site-branding">
+
                     <?php
-                    the_custom_logo();
+                    if (is_front_page()) :
+
+// how to get the logo resized on different pages?  always include logo but bark with a div or class to target it!
+
+                        the_custom_logo();
+                    endif;
+
                     if (!empty(get_bloginfo('name'))) :
-                        if (is_front_page() && is_home()) :
+                        if (is_front_page()) :
                             ?>
                             <h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
                             <?php
@@ -46,7 +53,6 @@
                 </div><!-- .site-branding -->
 
                 <nav id="site-navigation" class="main-navigation">
-                    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e('Primary Menu', 'big-and-bold'); ?></button>
                     <?php
                     wp_nav_menu(array(
                         'theme_location' => 'menu-1',

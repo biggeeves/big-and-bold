@@ -11,18 +11,38 @@
     display: inline-block;
 }
 
-.site-branding {
-    margin: 10px 10px 10px 20px;
-    width: 130px;
+.info-block.phone {
+    @media screen and (max-width: $screen_sm) {
+        margin: 0px auto;
+        text-align: center;
+        display: block;
+    }    
 }
 
-.home .site-branding {
-    margin: 10px 10px 10px 80px;
+.info-block.location {
+    @media screen and (max-width: $screen_sm) {
+        display: none;
+    }
+}
+
+.site-header {
+    background-color: #fd3c3d;
+}
+
+
+.site-branding {
+    margin: 10px 10px 10px 20px;
+    @media screen and (max-width: $screen_lg) {
+        margin: 10px auto;
+        text-align: center;
+        display: block;
+    }
+
 }
 
 .home .custom-logo {
-    width: 100%;
-    height: 100%;
+    width: 224px;
+    height: 100px;
 }
 
 .page .custom-logo {
